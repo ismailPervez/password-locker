@@ -13,8 +13,15 @@ class TestMain(unittest.TestCase):
         """
         result2 = user1.get_creds(user1.password)
 
+        """
+        testing store_password() method
+        """
+        test_cred = main.Credential("insta", "pass123")
+        result3 = user1.store_password(test_cred)
+
         self.assertEqual(result, "ismailpervez")
         self.assertEqual(result2, "no password saved yet")
+        self.assertEqual(result3, "cred stored successfully!")
 
     def test_Credential(self):
         cred1 = main.Credential("twitter", "twitter_password")
