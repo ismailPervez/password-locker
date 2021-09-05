@@ -9,7 +9,6 @@ dependancies (built-in)
 import random
 import string
 
-
 """
 class User is used as a blueprint for a user
 a user is required to have a username and a password to access his/her credentials
@@ -69,10 +68,9 @@ user = User(new_username, new_passsword)
 application main loop
 """
 while True:
-
     print("pick your option")
     print("1. view passwords\n2. save password\n3. exit application")
-    
+
     menu_option = int(input("menu option: [1/2/3]: "))
     """
     code to execute when first option of the menu is chosen 
@@ -85,9 +83,7 @@ while True:
     elif menu_option == 2:
         account_name = input("enter an account name: ")
         account_password = input(f"enter password for {account_name}: ")
-
         cred = Credential(account_name, account_password)
-
         user.store_password(cred)
 
     # code to execute when third option of the menu is chosen
