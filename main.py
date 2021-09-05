@@ -4,6 +4,13 @@ A simple application to store passwords
 """
 
 """
+dependancies (built-in)
+"""
+import random
+import string
+
+
+"""
 class User is used as a blueprint for a user
 a user is required to have a username and a password to access his/her credentials
 a user also has a list containing saved
