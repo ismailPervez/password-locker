@@ -49,3 +49,9 @@ class Credential:
             random_password = ''.join(random.choices(string.ascii_letters, k=5)) + str(random.randint(0,10000))
             self.account_password = random_password
 
+"""
+starting point of main application functionality - creating an user account
+"""
+print("PASSWORD LOCKER")
+new_username = input("enter your username: ")
+new_passsword = input("enter your password: ")
