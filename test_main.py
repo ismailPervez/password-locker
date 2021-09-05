@@ -24,6 +24,9 @@ class TestMain(unittest.TestCase):
         self.assertEqual(result3, "cred stored successfully!")
 
     def test_Credential(self):
+        """
+        test for Credential class
+        """
         cred1 = main.Credential("twitter", "twitter_password")
         result = cred1.account_name
 
