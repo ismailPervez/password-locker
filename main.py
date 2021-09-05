@@ -48,3 +48,4 @@ class Credential:
             # generate password
             random_password = ''.join(random.choices(string.ascii_letters, k=5)) + str(random.randint(0,10000))
             self.account_password = random_password
+
