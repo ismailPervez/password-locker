@@ -67,11 +67,14 @@ while True:
     print("1. view passwords\n2. save password\n3. exit application")
     
     menu_option = int(input("menu option: [1/2]: "))
-
+    """
+    code to execute when first option of the menu is chosen 
+    """
     if menu_option == 1:
         input_password = input("enter your password: ")
         user.get_creds(input_password)
 
+    # code to execute when second option of the menu is chosen
     elif menu_option == 2:
         account_name = input("enter an account name: ")
         account_password = input(f"enter password for {account_name}: ")
@@ -80,5 +83,6 @@ while True:
 
         user.store_password(cred)
 
+    # code to execute when third option of the menu is chosen
     else:
         exit()
