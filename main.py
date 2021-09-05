@@ -26,6 +26,19 @@ class User:
         else:
             print("wrong password!")
 
+    def store_password(self, cred):
+        #print(cred.account_name, cred.account_password)
+        if isinstance(cred, Credential):
+            if cred.account_name and cred.account_password:
+                self.users_credentials.append(cred)
+                print("cred stored successfully!")
+                
+            else:
+                print("please provide an account name and password")
+            
+        else:
+            print("please provide an account name and password")
+
 class Credential:
     def __init__(self, account_name, account_password):
         self.account_name = account_name
