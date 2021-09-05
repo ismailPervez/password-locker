@@ -55,3 +55,15 @@ starting point of main application functionality - creating an user account
 print("PASSWORD LOCKER")
 new_username = input("enter your username: ")
 new_passsword = input("enter your password: ")
+
+user = User(new_username, new_passsword)
+
+"""
+application main loop
+"""
+while True:
+
+    print("pick your option")
+    print("1. view passwords\n2. save password\n3. exit application")
+    
+    menu_option = int(input("menu option: [1/2]: "))
