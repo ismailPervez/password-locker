@@ -67,3 +67,9 @@ while True:
     print("1. view passwords\n2. save password\n3. exit application")
     
     menu_option = int(input("menu option: [1/2]: "))
+
+    if menu_option == 1:
+        input_password = input("enter your password: ")
+        user.get_creds(input_password)
+
+    
