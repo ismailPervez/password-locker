@@ -15,7 +15,7 @@ class User:
         self.password = password
 
 
-user1 = User("ismailpervez", "password123")
-cred1 = Credential("twitter", "password001")
-print(user1.username)
-print(cred1.accountName)
+# user1 = User("ismailpervez", "password123")
+# cred1 = Credential("twitter", "password001")
+# print(user1.username)
+# print(cred1.accountName)
