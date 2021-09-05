@@ -79,3 +79,6 @@ while True:
         cred = Credential(account_name, account_password)
 
         user.store_password(cred)
+
+    else:
+        exit()
