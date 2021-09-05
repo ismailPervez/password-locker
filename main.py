@@ -3,10 +3,6 @@
 A simple application to store passwords
 """
 
-class Credential:
-    def __init__(self, accountName, password):
-        self.accountName = accountName
-        self.password = password
 """
 class User is used as a blueprint for a user
 a user is required to have a username and a password to access his/her credentials
@@ -30,3 +26,12 @@ class User:
         else:
             print("wrong password!")
 
+class Credential:
+    def __init__(self, account_name, account_password):
+        self.account_name = account_name
+        self.account_password = account_password
+
+        if not self.account_password:
+            # generate password
+            random_password = ''.join(random.choices(string.ascii_letters, k=5)) + str(random.randint(0,10000))
+            self.account_password = random_password
