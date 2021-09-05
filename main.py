@@ -66,7 +66,7 @@ while True:
     print("pick your option")
     print("1. view passwords\n2. save password\n3. exit application")
     
-    menu_option = int(input("menu option: [1/2]: "))
+    menu_option = int(input("menu option: [1/2/3]: "))
     """
     code to execute when first option of the menu is chosen 
     """
