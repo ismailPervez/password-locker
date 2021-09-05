@@ -72,4 +72,10 @@ while True:
         input_password = input("enter your password: ")
         user.get_creds(input_password)
 
-    
+    elif menu_option == 2:
+        account_name = input("enter an account name: ")
+        account_password = input(f"enter password for {account_name}: ")
+
+        cred = Credential(account_name, account_password)
+
+        user.store_password(cred)
