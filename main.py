@@ -82,7 +82,13 @@ while True:
     # code to execute when second option of the menu is chosen
     elif menu_option == 2:
         account_name = input("enter an account name: ")
-        account_password = input(f"enter password for {account_name}: ")
+        print('1. enter a password')
+        print('2. automatically generate a password')
+        password_option = int(input('password option: [1/2]: '))
+        if password_option == 1:
+            account_password = input(f"enter password for {account_name}: ")
+        else :
+            account_password = ''
         cred = Credential(account_name, account_password)
         user.store_password(cred)
 
